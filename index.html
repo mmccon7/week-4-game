@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="jumbotron">
+  <h1 class="text-center">The Crystal Collector Game</h1>
+  <h3 class="text-center">Match the Crystal Value to the Magic Number and WIN!</h3>
+</div>
+
+<div class="container">
+
+	<div class="row">
+
+<!-- Instructions Panel -->
+	<div class="col-lg-4">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Instructions</h2>
+		</div>
+			<div class="panel-body">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals. By clicking on a crystal you will add a 
+			specific amount of points to your Crystal Value.</p>
+			<p>You win the game by matching your Crystal Value to the random number or Magic Number! You
+			lose the game if your Crystal Value goes above the Magic Number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time the game starts, the values of the crystals will change.</p>
+			</div>
+		</div>
+	</div>
+<!-- Crystals Panel -->
+	<div class="col-lg-8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Choose a Crystal!</h2>
+          </div>
+          <div class="panel-body">
+
+      		<img id="crystalOne" class="img-circle" class="img-responsive inline-block" src="assets/images/crystal1.png" alt="Crystal">
+
+    		<img id="crystalTwo" class="img-circle" class="img-responsive inline-block" src="assets/images/crystal2.png" alt="Crystal">
+
+    		<img id="crystalThree" class="img-circle" class="img-responsive inline-block" src="assets/images/crystal3.png" alt="Crystal">
+
+    		<img id="crystalFour" class="img-circle" class="img-responsive inline-block" src="assets/images/crystal4.png" alt="Crystal">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+		<h2 class="panel-title">Magic Number</h2>
+		</div>
+			<div id="magicNumber" class="panel-body">
+			Magic Number value goes here...
+			<br>
+			</div>
+		</div>
+	  </div>
+
+      <div class="col-lg-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Crystal Value</h2>
+          </div>
+          <div id="crystalValue" class="panel-body">
+          	0
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Wins</h2>
+          </div>
+          <div id="winCount" class="panel-body">
+      		Wins go here
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">Losses</h2>
+          </div>
+          <div id="lossCount" class="panel-body">
+      		Losses go here...
+          </div>
+        </div>
+      </div>
+
+	
+</div>
+</div>
+
+<!-- Jquery -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- link to javascript file -->
+<script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
